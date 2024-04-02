@@ -20,6 +20,7 @@ module.exports = {
     '@typescript-eslint/no-empty-function': 'off',
     '@typescript-eslint/no-unused-vars': ['warn', { ignoreRestSiblings: true }],
     'jsonc/sort-keys': 'error',
+    'react/react-in-jsx-scope': 'off',
   },
   env: {
     browser: true,

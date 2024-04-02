@@ -9,7 +9,7 @@ module.exports = {
     ],
     // support async/await
     '@babel/plugin-transform-runtime',
-    ['@babel/plugin-transform-react-jsx'],
+    ['@babel/plugin-transform-react-jsx', { runtime: 'automatic' }],
   ],
   presets: [['@babel/preset-env', { targets: { node: 'current' } }], '@babel/preset-typescript'],
 }
