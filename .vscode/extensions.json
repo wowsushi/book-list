@@ -1,8 +1,11 @@
 {
   "recommendations": [
-    "nrwl.angular-console",
-    "esbenp.prettier-vscode",
+    "jonkwheeler.styled-components-snippets",
+    "streetsidesoftware.code-spell-checker",
     "dbaeumer.vscode-eslint",
-    "firsttris.vscode-jest-runner"
+    "stylelint.vscode-stylelint",
+    "eamodio.gitlens",
+    "styled-components.vscode-styled-components",
+    "lokalise.i18n-ally"
   ]
 }

@@ -1,5 +1,32 @@
 {
+  "editor.tabSize": 2,
+  "editor.renderWhitespace": "all",
+  "javascript.validate.enable": true,
+  "typescript.validate.enable": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
-  }
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
+  },
+  "editor.tabCompletion": "on",
+  "editor.snippetSuggestions": "top",
+  "editor.formatOnSave": false,
+  "eslint.validate": [
+    "json"
+  ],
+  "stylelint.validate": [
+    "css",
+    "postcss",
+    "typescript",
+    "scss"
+  ],
+  "i18n-ally.namespace": true,
+  "i18n-ally.displayLanguage": "zh",
+  "i18n-ally.preferredDelimiter": ":",
+  "i18n-ally.pathMatcher": "{locale}/{namespace}.json",
+  "i18n-ally.defaultNamespace": "common",
+  "i18n-ally.keystyle": "nested",
+  "i18n-ally.enabledFrameworks": ["i18next", "react"],
+  "i18n-ally.localesPaths": [
+    "src/public/locales"
+  ]
 }
