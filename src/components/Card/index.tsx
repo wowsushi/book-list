@@ -37,7 +37,7 @@ const Card = ({ data }: Props) => {
     <Box>
       <ImageWrapper>
         <Space />
-        <Image src={data.coverUrl} />
+        <Image src={data.coverUrl} alt={data.title} loading="lazy" />
         <Mask />
         <HeartIcon
           variant={heartIconStatus.variant}
