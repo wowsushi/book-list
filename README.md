@@ -20,8 +20,11 @@ Builds the app for production to the `build` folder.
 ### How to show book list response from server?
 1. Open Dev tool and switch to tab Network
 2. Find request name user-list and switch to tab Response
-3. Right click the response content and click button `open in new tab`
-4. Visit website and click `Request temporary access to the demo server`
-5. After see `You currently have temporary access to the demo server`, back to the website and reload site
+3. Right click the response content and click button `open in new tab`\
+   ![https://raw.githubusercontent.com/wowsushi/book-list/master/step_1.png](step_1)
+4. Visit website and click `Request temporary access to the demo server`\
+   ![https://raw.githubusercontent.com/wowsushi/book-list/master/step_2.png](step_2)
+5. After see `You currently have temporary access to the demo server`, back to the website and reload site\
+   ![https://raw.githubusercontent.com/wowsushi/book-list/master/step_3.png](step_3)/
 6. You will see book list!
 
