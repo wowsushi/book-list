@@ -15,8 +15,7 @@ export const AppGlobalStyle = createGlobalStyle`
     outline: none;
   }
 
-   /* fix formatselect layout for tinymce editor */
-  .tox .tox-collection__item-label {
-    line-height: 1 !important;
+  * {
+    box-sizing: border-box;
   }
 `
