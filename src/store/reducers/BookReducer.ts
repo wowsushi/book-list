@@ -6,6 +6,7 @@ import { BookState } from '../epics/BookEpic'
 const initialState: BookState = {
   bookList: [],
   likeList: {},
+  initialized: false,
 }
 export interface FetchBookAction {
   type: typeof BOOK_ACTION.FETCH_BOOK
@@ -65,6 +66,7 @@ export const bookReducer: Reducer<BookState, BookActionType> = (state = initialS
       return {
         ...state,
         bookList: action.payload,
+        initialized: true,
       }
     case BOOK_ACTION.TOGGLE_LIKE_FULFILLED:
     case BOOK_ACTION.GET_LIKE_LIST_FULFILLED:

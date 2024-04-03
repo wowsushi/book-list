@@ -7,6 +7,16 @@ import { RootState } from '@/store/reducers'
 
 import Card from '../Card'
 import Icon, { SvgVariant } from '../Icon'
+import Skeleton from '../Skeleton'
+
+const SkeletonCard = () => {
+  return (
+    <div>
+      <SkeletonImage />
+      <SkeletonText />
+    </div>
+  )
+}
 const BookList = () => {
   const bookStore = useSelector((state: RootState) => state.book)
   const dispatch = useDispatch()
@@ -23,9 +33,9 @@ const BookList = () => {
         <CancelIcon variant={SvgVariant.CROSS} />
       </Header>
       <BookWrapper>
-        {bookStore.bookList.map((book) => (
-          <Card key={book.uuid} data={book} />
-        ))}
+        {bookStore.initialized
+          ? bookStore.bookList.map((book) => <Card key={book.uuid} data={book} />)
+          : [...Array(12).keys()].map((num) => <SkeletonCard key={num} />)}
       </BookWrapper>
     </section>
   )
@@ -97,4 +107,12 @@ const BookWrapper = styled.div`
     margin: auto;
     padding-top: ${({ theme }) => `calc(${theme.layout.navbarHeight_desktop}px + 1.5rem)`};
   }
+`
+
+const SkeletonImage = styled(Skeleton)`
+  padding-top: ${(71 / 50) * 100}%;
+`
+const SkeletonText = styled(Skeleton)`
+  width: 100%;
+  height: 1.45rem;
 `

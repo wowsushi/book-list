@@ -20,6 +20,7 @@ export interface Book {
 export interface BookState {
   bookList: Book[]
   likeList: Record<string, number>
+  initialized: boolean
 }
 
 export const fetchBook = () => ({ type: BOOK_ACTION.FETCH_BOOK })
