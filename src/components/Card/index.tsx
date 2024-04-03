@@ -1,10 +1,9 @@
-import { useCallback, useMemo, useRef } from 'react'
+import { useMemo } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import styled, { useTheme } from 'styled-components'
 
 import { Book, toggleLike } from '@/store/epics/BookEpic'
 import { RootState } from '@/store/reducers'
-import { getItem, STORAGE_KEYS } from '@/utils'
 
 import Icon, { SvgVariant } from '../Icon'
 import Text from '../Text'

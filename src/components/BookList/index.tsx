@@ -1,10 +1,9 @@
-import { useEffect, useRef } from 'react'
+import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import styled from 'styled-components'
 
 import { fetchBook, getLikeList } from '@/store/epics/BookEpic'
 import { RootState } from '@/store/reducers'
-import { getItem, STORAGE_KEYS } from '@/utils'
 
 import Card from '../Card'
 import Icon, { SvgVariant } from '../Icon'
