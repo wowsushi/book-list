@@ -68,7 +68,7 @@ export const getLikeListEpic: Epic<unknown, unknown, RootState> = (action$) =>
   action$.pipe(
     ofType(BOOK_ACTION.GET_LIKE_LIST),
     mergeMap(() => {
-      const jsonString = getItem(STORAGE_KEYS.USER_LIKE_ITEMS) || ''
+      const jsonString = getItem(STORAGE_KEYS.USER_LIKE_ITEMS) || '{}'
       const likeList = JSON.parse(jsonString)
       return of(getLikeListFulfilled(likeList))
     }),
